@@ -11,13 +11,13 @@ public:
     Movie(): title(""), rate(0), duration(0), pub_year(0){};
     Movie(std::string titl, int rate, int dur, int year): title(titl), rate(rate), duration(dur), pub_year(year){};
     
-    // get valuables
+    // obtener valiables
     std::string get_title();
     int get_rate();
     int get_duration();
     int get_pub_year();
     
-    // set valuables
+    // determinar valiables
     void set_title(std::string);
     void set_rate(int);
     void set_duration(int);
