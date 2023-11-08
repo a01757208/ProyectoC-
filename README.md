@@ -1,4 +1,6 @@
 # Proyecto "Let's rate!"
+
+## Información general
 Nombre: Risako Baba
 Matrícula: A01757208
 Curso: Pensamiento computacional orientado a objetos (Gpo 302)
