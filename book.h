@@ -18,7 +18,7 @@ public:
     int get_volumes();
     int get_pub_year();
     
-    // determina valiables
+    // determinar valiables
     void set_title(std::string);
     void set_rate(int);
     void set_volumes(int);
