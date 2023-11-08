@@ -13,7 +13,7 @@ public:
     Series(): title(""), rate(0), episodes(0), pub_year(0){};
     Series(std::string titl, int rate, int epi, int year): title(titl), rate(rate), episodes(epi), pub_year(year){};
     
-    // get valuables
+    // obtener valiables
     std::string get_title();
     int get_rate();
     int get_episodes();
@@ -21,7 +21,7 @@ public:
     int get_size_fav();
     int get_fav_episodes(int);
     
-    // set valuables
+    // determinar valiables
     void set_title(std::string);
     void set_rate(int);
     void set_episodes(int);
