@@ -1,4 +1,4 @@
-# Proyecto "Rate rate rate!"
+# Proyecto "Let's rate!"
 
 ## Contexto
 ¿Qué película, serie o libro te gustó mucho o pensaste que no valía la pena verlo? Este proyecto genera clases que permiten
