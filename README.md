@@ -1,4 +1,7 @@
 # Proyecto "Let's rate!"
+Nombre: Risako Baba
+Matrícula: A01757208
+Curso: Pensamiento computacional orientado a objetos (Gpo 302)
 
 ## Contexto
 ¿Qué película, serie o libro te gustó mucho o pensaste que no valía la pena verlo? Este proyecto genera clases que permiten
