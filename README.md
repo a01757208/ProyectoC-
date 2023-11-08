@@ -8,11 +8,11 @@ Ten en cuenta que este proyecto no sirve para buscar nuevos entretenimientos por
 
 ## Funcionalidad
 
-Hasta ahora, el código establece tres objetos diferentes para cada clase.
-Tres clases:
+El código establece tres objetos diferentes para cada clase.
+Las tres clases:
 1. Movie
-3. Series
-4. Book
+2. Series
+3. Book
 
 Luego imprima cada uno de sus atributos utilizando métodos getters.
-Además, la serie de clase utiliza el método que agrega un episodio favorito a una lista y lo imprime.
+Además, la clase Serie utiliza el método que agrega un episodio favorito a una lista y lo imprime.
