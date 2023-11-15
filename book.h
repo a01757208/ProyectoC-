@@ -1,63 +1,50 @@
 #include <string>
 
-class Book{
+class Book: public Article {
 private:
     int volumes;
-    int rate;
-    std::string title;
-    int pub_year;
-    
 
 public:
-    Book(): title(""), rate(0), volumes(0), pub_year(0){};
-    Book(std::string titl, int rate, int vol, int year): title(titl), rate(rate), volumes(vol), pub_year(year){};
+    Book(): volumes(0), Article(){};
+    Book(std::string titl, int rate, int year, int vol): Article(titl, rate, vol), volumes(vol){};
     
-    // obtener valiables
-    std::string get_title();
-    int get_rate();
+    // get valuables
     int get_volumes();
-    int get_pub_year();
     
-    // determinar valiables
-    void set_title(std::string);
-    void set_rate(int);
+    // set valuables
     void set_volumes(int);
-    void set_pub_year(int);
     
-    
+    void new_book();
     
 };
 
-// los getters
-std::string Book::get_title(){
-    return title;
-}
-
-int Book::get_rate(){
-    return rate;
-}
-
 int Book::get_volumes(){
     return volumes;
-}
-
-int Book::get_pub_year(){
-    return pub_year;
-}
-
-// los setters
-void Book::set_title(std::string titl){
-    title = titl;
-}
-
-void Book::set_rate(int rat){
-    rate = rat;
 }
 
 void Book::set_volumes(int vol){
     volumes = vol;
 }
 
-void Book::set_pub_year(int year){
-    pub_year = year;
+void Book :: new_book() {
+    
+    string titl;
+    int yea;
+    int rat;
+    
+    cout << "Title: ";
+    cin >> titl;
+    Book :: set_title(titl);
+    
+    cout << "Releasted year: ";
+    cin >> yea;
+    Book :: set_pub_year(yea);
+    
+    cout << "Rate (0 - 10): ";
+    cin >> rat;
+    Book :: set_rate(rat);
+    
+    cout << "Number of volumes: ";
+    cin >> volumes;
 }
+    
