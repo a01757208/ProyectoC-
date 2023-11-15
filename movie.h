@@ -1,63 +1,56 @@
 #include <string>
 
-class Movie{
+#include <iostream>
+#include "article.h"
+
+using namespace std;
+
+
+class Movie : public Article{
 private:
     int duration;
-    int rate;
-    std::string title;
-    int pub_year;
-
+    
 public:
-    Movie(): title(""), rate(0), duration(0), pub_year(0){};
-    Movie(std::string titl, int rate, int dur, int year): title(titl), rate(rate), duration(dur), pub_year(year){};
+    Movie(): Article(), duration(0){};
+    Movie(std::string titl, int rate, int dur, int year): Article(titl, rate, year), duration(dur){};
     
-    // obtener valiables
-    std::string get_title();
-    int get_rate();
+    // get valuables
     int get_duration();
-    int get_pub_year();
     
-    // determinar valiables
-    void set_title(std::string);
-    void set_rate(int);
+    // set valuables
     void set_duration(int);
-    void set_pub_year(int);
-    
-    
-    
+    void new_movie();
 };
 
 // los getters
-std::string Movie::get_title(){
-    return title;
-}
-
-int Movie::get_rate(){
-    return rate;
-}
-
 int Movie::get_duration(){
     return duration;
 }
 
-int Movie::get_pub_year(){
-    return pub_year;
-}
-
-
 // los setters
-void Movie::set_title(std::string titl){
-    title = titl;
-}
-
-void Movie::set_rate(int rat){
-    rate = rat;
-}
-
 void Movie::set_duration(int dura){
     duration = dura;
 }
 
-void Movie::set_pub_year(int year){
-    pub_year = year;
+void Movie :: new_movie() {
+    
+    string titl;
+    int yea;
+    int rat;
+    
+    cout << "Title: ";
+    cin >> titl;
+    Movie :: set_title(titl);
+    
+    cout << "Releasted year: ";
+    cin >> yea;
+    Movie :: set_pub_year(yea);
+    
+    cout << "Rate (0 - 10): ";
+    cin >> rat;
+    Movie :: set_rate(rat);
+    
+    cout << "Duration (min): ";
+    cin >> duration;
+
 }
