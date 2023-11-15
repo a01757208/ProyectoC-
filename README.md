@@ -20,3 +20,5 @@ Las tres clases:
 
 Luego imprima cada uno de sus atributos utilizando métodos getters.
 Además, la clase Serie utiliza el método que agrega un episodio favorito a una lista y lo imprime.
+
+## Anotar que hace cada archivo
