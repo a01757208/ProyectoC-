@@ -23,7 +23,7 @@ Luego imprima sus atributos utilizando métodos getters.
 
 Supongamos que selecciona "2. End". En este caso, el código saldrá del ciclo while y finalizará el código.
 
-## Que es nuevo?
+## ¿Que es nuevo?
 - Se agrega while loop para repetir el código hasta que el usuario quiera terminarlo.
 - Se agregan if, switch y cin para poder elegir una opción y dar inputs.
 - Agregué un nuevo método en cada clase que crea un nuevo objeto basado en las entradas del usuario.
