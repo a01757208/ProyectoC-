@@ -28,3 +28,7 @@ Supongamos que selecciona "2. End". En este caso, el código saldrá del ciclo w
 - Se agregan if, switch y cin para poder elegir una opción y dar inputs.
 - Agregué un nuevo método en cada clase que crea un nuevo objeto basado en las entradas del usuario.
 
+## UML
+Consulte el diagrama UML:
+https://lucid.app/lucidchart/991abffb-83be-456d-9e47-c0eae41f273b/edit?viewport_loc=-300%2C-862%2C2782%2C1515%2C0_0&invitationId=inv_8c9e835c-e4ce-4b2e-a057-a1722a99e5a5
+
