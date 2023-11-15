@@ -11,14 +11,20 @@ permite calificar y guardar tres tipos diferentes de entretenimiento: Película,
 Ten en cuenta que este proyecto no sirve para buscar nuevos entretenimientos porque solo gestiona los que ya has visto o leído.
 
 ## Funcionalidad
+El código le pide al usuario que elija una de estas opciones:
+1. Rate new article
+2. End
 
-El código establece tres objetos diferentes para cada clase.
-Las tres clases:
-1. Movie
-2. Series
-3. Book
+Supongamos que selecciona "1. Rate new article". En ese caso, se mostrarán tres tipos de artículos, y dependiendo de lo que selecciones, te pedirá que completes diferente información (indicada dentro del paréntesis):
+1. Movie (title, released year, rate, duration)
+2. Series (title, released year, rate, episodes)
+3. Book (title, released year, rate, volumes)
+Luego imprima sus atributos utilizando métodos getters.
 
-Luego imprima cada uno de sus atributos utilizando métodos getters.
-Además, la clase Serie utiliza el método que agrega un episodio favorito a una lista y lo imprime.
+Supongamos que selecciona "2. End". En este caso, el código saldrá del ciclo while y finalizará el código.
 
-## Anotar que hace cada archivo
+## Que es nuevo?
+- Se agrega while loop para repetir el código hasta que el usuario quiera terminarlo.
+- Se agregan if, switch y cin para poder elegir una opción y dar inputs.
+- Agregué un nuevo método en cada clase que crea un nuevo objeto basado en las entradas del usuario.
+
