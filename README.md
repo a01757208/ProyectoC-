@@ -27,7 +27,7 @@ Luego guardará la información en la lista del objeto user e imprimirá sus atr
 Supongamos que selecciona "2. End". En este caso, el código saldrá del ciclo while y finalizará el código.
 
 ## ¿Que es nuevo?
-- 
+- Agregué un header file y contiene la clase user que crea una clase de Movie, Series o Book y la guarda en sus listas de atributos (Composición)
 
 ## UML
 Consulte el diagrama UML:
