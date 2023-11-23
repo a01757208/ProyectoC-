@@ -8,7 +8,6 @@
 #include <iostream>
 #include <string>
 #include "user.h"
-#include "award.h"
 
 using namespace std;
 
