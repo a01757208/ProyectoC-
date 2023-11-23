@@ -12,14 +12,10 @@
 
 using namespace std;
 
-// MENU (todavia no lo he acabado constuir)
 void menu() {
     cout << "---- Let's Rate! ----" << endl;
     cout << "Menu: " << endl;
     cout << "1. Rate a new article" << endl;
-//    cout << "2. Nominate an article" << endl;
-//    cout << "3. My records" << endl;
-//    cout << "4. My favorites" << endl;
     cout << "2. End" << endl;
     cout << endl;
 }
@@ -46,12 +42,10 @@ int main(){
         else if (option == 2) {
             cout << "Thank you!" << endl;
             contin = false;
-            break;
         }
         else {
             cout << "INVALID OPTION" << endl;
         }
-        
         
     }
 
