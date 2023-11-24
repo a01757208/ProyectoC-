@@ -40,6 +40,9 @@ public:
     
     void set_name(string);
     void new_article();
+    void create_book();
+    void create_movie();
+    void create_series();
     
 };
 
@@ -78,63 +81,72 @@ void User :: new_article() {
     if (typ >= 1 && typ <= 3) {
      switch (typ) {
          case 1: {
-             Movie movie;
-             movie.new_movie();
-             cout << "------ Movie: " << movie.get_title() << " -------"<< endl;
-             cout << "The rate of the movie is: " << movie.get_rate() << "/10" << endl;
-             cout << "The duration of the movie is: " << movie.get_duration() << " min" << endl;
-             cout << "The released year of the movie is: " << movie.get_pub_year() << endl;
-             cout << endl;
-             
-             arg_mov[movie_num] = movie;
-             movie_num = movie_num + 1;
-             
+             create_movie();
              break;
          }
              
          case 2: {
-             Series series;
-             series.new_series();
-             cout << "------ Series: " << series.get_title() << " -------"<< endl;
-             cout << "The rate of the series is: " << series.get_rate() << "/10" << endl;
-             cout << "The number of episodes: " << series.get_episodes() << " episodes" << endl;
-             cout << "The released year of the series is: " << series.get_pub_year() << endl;
-             
-             series.add_fav_episodes(20); // <-- me falta pedir a los usuarios sus episodios favoritos
-             cout << "Your favorite episodes are: " << endl;
-             int size_fav = series.get_size_fav();
-             for (int i = 0; i < size_fav; i++){
-                 cout << "Episode No." << series.get_fav_episodes(i);
-             }
-             cout << endl;
-             
-             arg_ser[series_num] = series;
-             series_num = series_num + 1;
-             
+             create_series();
              break;
          }
 
          case 3: {
-             Book book;
-             book.new_book();
-             
-             cout << "------ Book: " << book.get_title() << " -------"<< endl;
-             cout << "The rate of the book is: " << book.get_rate() << "/10" << endl;
-             cout << "The number of volumes: " << book.get_volumes() << endl;
-             cout << "The released year of the book is: " << book.get_pub_year() << endl;
-             cout << endl;
-             
-             arg_boo[book_num] = book;
-             book_num = book_num + 1;
-             
+             create_book();
              break;
-             
          }
-             
-
      }
      
     } else {
      cout << "INVALID OPTION" << endl;
     }
+}
+
+void User::create_book(){
+    Book book;
+    book.new_book();
+    
+    cout << "------ Book: " << book.get_title() << " -------"<< endl;
+    cout << "The rate of the book is: " << book.get_rate() << "/10" << endl;
+    cout << "The number of volumes: " << book.get_volumes() << endl;
+    cout << "The released year of the book is: " << book.get_pub_year() << endl;
+    cout << endl;
+    
+    arg_boo[book_num] = book;
+    book_num = book_num + 1;
+
+}
+
+void User::create_movie(){
+    Movie movie;
+    movie.new_movie();
+    cout << "------ Movie: " << movie.get_title() << " -------"<< endl;
+    cout << "The rate of the movie is: " << movie.get_rate() << "/10" << endl;
+    cout << "The duration of the movie is: " << movie.get_duration() << " min" << endl;
+    cout << "The released year of the movie is: " << movie.get_pub_year() << endl;
+    cout << endl;
+    
+    arg_mov[movie_num] = movie;
+    movie_num = movie_num + 1;
+    
+}
+
+void User::create_series(){
+    Series series;
+    series.new_series();
+    cout << "------ Series: " << series.get_title() << " -------"<< endl;
+    cout << "The rate of the series is: " << series.get_rate() << "/10" << endl;
+    cout << "The number of episodes: " << series.get_episodes() << " episodes" << endl;
+    cout << "The released year of the series is: " << series.get_pub_year() << endl;
+    
+    series.add_fav_episodes(20); // <-- me falta pedir a los usuarios sus episodios favoritos
+    cout << "Your favorite episodes are: " << endl;
+    int size_fav = series.get_size_fav();
+    for (int i = 0; i < size_fav; i++){
+        cout << "Episode No." << series.get_fav_episodes(i);
+    }
+    cout << endl;
+    
+    arg_ser[series_num] = series;
+    series_num = series_num + 1;
+    
 }

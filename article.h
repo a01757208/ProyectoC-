@@ -1,9 +1,21 @@
+//
+//  article.h
+//  Poject-Rating
+//
+//  Created by 馬場理咲子 on 2023/11/11.
+//
+
+#ifndef article_h
+#define article_h
+
+
+#endif /* article_h */
 #include <string>
 
 class Article {
 private:
-    int rate;
     std::string title;
+    int rate;
     int pub_year;
     
 public:
@@ -47,3 +59,5 @@ void Article::set_rate(int rat){
 void Article::set_pub_year(int year){
     pub_year = year;
 }
+
+

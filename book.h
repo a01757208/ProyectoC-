@@ -1,4 +1,16 @@
+//
+//  books.h
+//  Poject-Rating
+//
+//  Created by 馬場理咲子 on 2023/11/07.
+//
+
+#ifndef book_h
+#define book_h
+
+#endif /* book_h */
 #include <string>
+//#include "article.h"
 
 class Book: public Article {
 private:

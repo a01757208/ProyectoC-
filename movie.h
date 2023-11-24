@@ -1,3 +1,16 @@
+//
+//  Header.h
+//  Poject-Rating
+//
+//  Created by 馬場理咲子 on 2023/11/06.
+//
+
+#ifndef movie_h
+#define movie_h
+
+
+#endif /* movie_h */
+
 #include <string>
 #include <iostream>
 #include "article.h"
@@ -53,3 +66,4 @@ void Movie :: new_movie() {
     cin >> duration;
 
 }
+

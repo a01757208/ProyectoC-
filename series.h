@@ -1,3 +1,15 @@
+//
+//  series.h
+//  Poject-Rating
+//
+//  Created by 馬場理咲子 on 2023/11/07.
+//
+
+#ifndef series_h
+#define series_h
+
+
+#endif /* series_h */
 #include <string>
 #include <iostream>
 //#include "article.h"
@@ -69,3 +81,4 @@ void Series :: new_series() {
     cin >> episodes;
 
 }
+
