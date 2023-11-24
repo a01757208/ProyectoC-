@@ -6,7 +6,7 @@ class Series : public Article{
 private:
     int episodes;
     int size_fav = 0;
-    int fav_episodes[0] = {};
+    int fav_episodes[100];
 
 public:
     Series(): Article(), episodes(0){};
