@@ -25,9 +25,9 @@ private:
     int series_num = 0;
     int movie_num = 0;
     
-    Movie arg_mov[0] = {};
-    Series arg_ser[0] = {};
-    Book arg_boo[0] = {};
+    Movie arg_mov[100];
+    Series arg_ser[100];
+    Book arg_boo[100];
 
 public:
     User(): name(""){};
