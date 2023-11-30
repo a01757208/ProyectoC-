@@ -1,0 +1,21 @@
+## Prueba
+
+---- Let's Rate! ----
+Menu: 
+1. Rate a new article
+2. End
+
+Choose one: 1
+---- Rate new article ----
+1. Movie
+2. Series
+3. Book
+Which type of article do you want to rate?: 1
+Title: Barbie
+Released year: 2023
+Rate (0 - 10): 0
+Duration (min): 210
+------ Movie: Barbie -------
+The rate of the movie is: 0/10
+The duration of the movie is: 210 min
+The released year of the movie is: 2023
